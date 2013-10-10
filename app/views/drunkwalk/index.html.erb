@@ -1,0 +1,22 @@
+<div class="row-fluid">
+	<h2>O andar do bêbado</h2>
+</div>
+
+<div class="row-fluid">
+	<span class="span4 offset4">
+		<p style="text-align: justify;">Uma aplicação muito interessante no que diz respeito ao emprego da técnica de Simulacão Monte Carlo diz respeito ao cálculo de um caminho aleatório percorrido por um corpo, partícula, molécula ou o que seja. Segundo a teoria, à distância percorrida por esse corpo é equivalente a raiz quadrada no número de passos ou de movimentos realizados.</p>
+		<p>Uma analogia “interessante” é associar este cálculo à distância percorrida por um sujeito bêbado.</p>
+	</span>
+</div>
+
+<div class="row-fluid">
+	<span class="span4 offset4">
+		<p style="text-align: justify;"></p>
+		<p>Para iniciar informe o número de passos a serem dados:</p>
+		<%= form_tag(drunkwalk_walk_path, method: "get") do %>
+		  <%= label_tag(:steps, "Número de passos:") %>
+		  <%= text_field_tag(:steps, '50') %>
+		  <%= submit_tag("Enviar", :class => "btn") %>
+		<% end %>
+	</span>
+</div>

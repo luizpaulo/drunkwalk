@@ -1,0 +1,2 @@
+module DrunkwalkHelper
+end
